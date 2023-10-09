@@ -15,6 +15,7 @@ class _LoginPageState extends State<LoginPage> {
       body: SafeArea(
         child: Center(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const SizedBox(height: 25.0),
               //Hello again!
@@ -55,7 +56,7 @@ class _LoginPageState extends State<LoginPage> {
                 ),
               ),
 
-              const SizedBox(height: 10.0),
+              const SizedBox(height: 15.0),
 
               //password textfield
               Padding(
@@ -79,9 +80,46 @@ class _LoginPageState extends State<LoginPage> {
                 ),
               ),
 
+              const SizedBox(height: 15.0),
+
               //signin button
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                child: Container(
+                  padding: const EdgeInsets.all(20.0),
+                  decoration: BoxDecoration(
+                    color: Colors.grey[900],
+                    borderRadius: BorderRadius.circular(12.0),
+                  ),
+                  child: const Center(
+                    child: Text(
+                      'Sign In',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18.0,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+
+              const SizedBox(height: 15.0),
 
               //not a member? register now
+              const Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text('Not a member?'),
+                  Text(
+                    ' Register Now',
+                    style: TextStyle(
+                      color: Colors.blue,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ],
+              )
             ],
           ),
         ),
