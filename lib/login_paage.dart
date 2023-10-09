@@ -35,19 +35,46 @@ class _LoginPageState extends State<LoginPage> {
               const SizedBox(height: 20.0),
 
               //email textfield
-              Container(
-                decoration: BoxDecoration(
-                  color: Colors.grey[200],
-                  border: Border.all(color: Colors.white),
-                ),
-                child: const TextField(
-                  decoration: InputDecoration(
-                    border: InputBorder.none,
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.grey[200],
+                    border: Border.all(color: Colors.white),
+                    borderRadius: BorderRadius.circular(12.0),
+                  ),
+                  child: const Padding(
+                    padding: EdgeInsets.only(left: 20.0),
+                    child: TextField(
+                      decoration: InputDecoration(
+                        border: InputBorder.none,
+                        hintText: 'Email',
+                      ),
+                    ),
                   ),
                 ),
               ),
 
               //password textfield
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.grey[200],
+                    border: Border.all(color: Colors.white),
+                    borderRadius: BorderRadius.circular(12.0),
+                  ),
+                  child: const Padding(
+                    padding: EdgeInsets.only(left: 20.0),
+                    child: TextField(
+                      decoration: InputDecoration(
+                        border: InputBorder.none,
+                        hintText: 'Password',
+                      ),
+                    ),
+                  ),
+                ),
+              ),
 
               //signin button
 
