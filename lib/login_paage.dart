@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -17,12 +18,20 @@ class _LoginPageState extends State<LoginPage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              const Icon(
+                Icons.account_circle_rounded,
+                size: 100.0,
+              ),
+
+              const SizedBox(
+                height: 75.0,
+              ),
+
               //Hello again!
-              const Text(
+              Text(
                 'Hello Again!',
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 36.0,
+                style: GoogleFonts.bebasNeue(
+                  fontSize: 52.0,
                 ),
               ),
               const SizedBox(height: 10.0),
