@@ -55,6 +55,8 @@ class _LoginPageState extends State<LoginPage> {
                 ),
               ),
 
+              const SizedBox(height: 10.0),
+
               //password textfield
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 25.0),
@@ -67,6 +69,7 @@ class _LoginPageState extends State<LoginPage> {
                   child: const Padding(
                     padding: EdgeInsets.only(left: 20.0),
                     child: TextField(
+                      obscureText: true,
                       decoration: InputDecoration(
                         border: InputBorder.none,
                         hintText: 'Password',
